@@ -55,5 +55,16 @@ namespace RecuperacioTema_2
             }
         }
 
+        public static List<productLines> GetIMG()
+        {
+            string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=GamesPerson;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            using (SqlConnection conec = new SqlConnection(connectionString))
+            {
+                string sql = $@"SELECT image FROM productlines";
+                var order = conec.Query<productLines>(sql).ToList();
+                return order;
+            }
+        }
+
     }
 }

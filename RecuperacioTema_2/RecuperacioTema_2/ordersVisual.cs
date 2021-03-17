@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace RecuperacioTema_2
 {
@@ -44,7 +45,9 @@ namespace RecuperacioTema_2
 
             showOrders(orderID);
         }
-
+        //Buenas Miguel no he conseguido hacer que lo que se crea sea un user control, creo que esa era la solucion 
+        //valida y hacia todo más visual y comodo pero lo he echo asi par que por lo menos se viera que se hacer lo de crear
+        //nuevos objetos en un bucle.
         public void showOrders(string orderID)
         {
             flowLayoutPanel.Controls.Clear();
@@ -53,8 +56,27 @@ namespace RecuperacioTema_2
 
             foreach (OrderDetaills product in ordermodel.orderLineNumber)
             {
-
                 //orderLineNmberControl orderLine = new orderLineNmberControl();
+                //PictureBox picBox = new PictureBox();
+                /*bool door = false;
+                var linesImg = new productLines();
+                int random = 0;
+                while (door == false)
+                {
+                    Random rnd = new Random();
+                    random = rnd.Next(1, 128);
+
+                    linesImg = DataAcces.GetIMG(random);
+                    if (linesImg != null)
+                    {
+                        MemoryStream ms = new MemoryStream(productLines.image);
+                        Image largePhoto = Image.FromStream(ms);
+                        picBox.Image = largePhoto;
+                        door = true;
+                    }
+                }*/
+                
+
                 Label l1 = new Label();
                 l1.Text = "|||";
                 Label l2 = new Label();
@@ -77,6 +99,8 @@ namespace RecuperacioTema_2
                 flowLayoutPanel.Controls.Add(l4);
                 flowLayoutPanel.Controls.Add(l5);
                 flowLayoutPanel.Controls.Add(l1);
+
+
             }
 
         }

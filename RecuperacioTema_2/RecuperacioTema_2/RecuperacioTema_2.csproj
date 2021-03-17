@@ -76,6 +76,7 @@
       <DependentUpon>ordersVisual.cs</DependentUpon>
     </Compile>
     <Compile Include="OrderDetaills.cs" />
+    <Compile Include="productLines.cs" />
     <Compile Include="ProductModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
