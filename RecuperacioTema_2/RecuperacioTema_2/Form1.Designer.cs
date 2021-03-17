@@ -30,7 +30,7 @@
         {
             this.ordersCB = new System.Windows.Forms.ComboBox();
             this.customerCB = new System.Windows.Forms.ComboBox();
-            this.userControl31 = new RecuperacioTema_2.UserControl3();
+            this.ordersVisual1 = new RecuperacioTema_2.ordersVisual();
             this.SuspendLayout();
             // 
             // ordersCB
@@ -40,6 +40,7 @@
             this.ordersCB.Name = "ordersCB";
             this.ordersCB.Size = new System.Drawing.Size(121, 21);
             this.ordersCB.TabIndex = 1;
+            this.ordersCB.SelectedIndexChanged += new System.EventHandler(this.ordersCB_SelectedIndexChanged);
             // 
             // customerCB
             // 
@@ -50,20 +51,20 @@
             this.customerCB.TabIndex = 4;
             this.customerCB.SelectedIndexChanged += new System.EventHandler(this.customerCB_SelectedIndexChanged_1);
             // 
-            // userControl31
+            // ordersVisual1
             // 
-            this.userControl31.Location = new System.Drawing.Point(12, 126);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(784, 559);
-            this.userControl31.TabIndex = 2;
+            this.ordersVisual1.Location = new System.Drawing.Point(12, 102);
+            this.ordersVisual1.Name = "ordersVisual1";
+            this.ordersVisual1.Size = new System.Drawing.Size(850, 556);
+            this.ordersVisual1.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 739);
+            this.ClientSize = new System.Drawing.Size(888, 739);
+            this.Controls.Add(this.ordersVisual1);
             this.Controls.Add(this.customerCB);
-            this.Controls.Add(this.userControl31);
             this.Controls.Add(this.ordersCB);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -73,8 +74,8 @@
 
         #endregion
         private System.Windows.Forms.ComboBox ordersCB;
-        private UserControl3 userControl31;
         private System.Windows.Forms.ComboBox customerCB;
+        private ordersVisual ordersVisual1;
     }
 }
 

@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RecyperaCionLibrary;
 
 namespace RecuperacioTema_2
 {
     public partial class Form1 : Form
     {
-        public int[] IdCustomer;
+        Order or = new Order();
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +30,7 @@ namespace RecuperacioTema_2
 
         private void customerCB_SelectedIndexChanged_1(object sender, EventArgs e)
         {
+            ordersCB.Items.Clear();
             String customer = customerCB.Text;
             String[] n = customer.Split('|');
 
@@ -37,11 +39,25 @@ namespace RecuperacioTema_2
             DataAcces db = new DataAcces();
             List<Order> order = new List<Order>();
 
-            order = db.GetOrders(id);
+            order = db.GetOrdersToCustomer(id);
             foreach (Order ord in order)
             {
                 ordersCB.Items.Add(ord.orderNumber);
             }
+        }
+
+        public static EventHandler<clickEventArgs> ClickSizze;
+
+        public virtual void OnClickSizze(clickEventArgs e)
+        {
+            ClickSizze?.Invoke(this, e);
+        }
+
+        private void ordersCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            or.orderNumber = Int32.Parse(((ComboBox)sender).Text);
+            clickEventArgs args = new clickEventArgs(or);
+            OnClickSizze(args);
         }
     }
 }

@@ -4,7 +4,6 @@ C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\Recupera
 C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\obj\Debug\RecuperacioTema_2.csprojAssemblyReference.cache
 C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\obj\Debug\RecuperacioTema_2.Form1.resources
 C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\obj\Debug\RecuperacioTema_2.Properties.Resources.resources
-C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\obj\Debug\RecuperacioTema_2.UserControl3.resources
 C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\obj\Debug\RecuperacioTema_2.csproj.GenerateResource.cache
 C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\obj\Debug\RecuperacioTema_2.csproj.CoreCompileInputs.cache
 C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\obj\Debug\RecuperacioTema_2.exe
@@ -12,3 +11,6 @@ C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\Recupera
 C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\bin\Debug\Dapper.dll
 C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\bin\Debug\Dapper.xml
 C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\obj\Debug\RecuperacioTema_2.csproj.CopyComplete
+C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\bin\Debug\RecyperaCionLibrary.dll
+C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\obj\Debug\RecuperacioTema_2.ordersVisual.resources
+C:\Users\xesc2\Desktop\RecuperaioTema2\RecupercionT-3\RecuperacioTema_2\RecuperacioTema_2\obj\Debug\RecuperacioTema_2.orderLineNmberControl.resources

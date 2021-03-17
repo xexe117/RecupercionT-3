@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace RecuperacioTema_2
 {
-    public partial class UserControl3 : UserControl
+    public partial class orderLineNmberControl : UserControl
     {
-        public UserControl3()
+        public orderLineNmberControl()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void statusLB_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
